@@ -1,0 +1,9 @@
+venv/
+vector_store/
+artifacts/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.streamlit/secrets.toml
+.ipynb_checkpoints/

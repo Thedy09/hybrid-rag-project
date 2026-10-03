@@ -1,0 +1,456 @@
+{
+  "summary": {
+    "vector": {
+      "recall_at_1": 0.8,
+      "recall_at_5": 1.0,
+      "mrr": 0.8833333333333334
+    },
+    "bm25": {
+      "recall_at_1": 0.8,
+      "recall_at_5": 1.0,
+      "mrr": 0.8699999999999999
+    },
+    "hybrid": {
+      "recall_at_1": 0.7,
+      "recall_at_5": 1.0,
+      "mrr": 0.85
+    },
+    "rerank": {
+      "recall_at_1": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 1.0
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What are the main limitations of traditional RAG?",
+      "gold_substring": "five structural limitations of a vector-only RAG pipeline",
+      "gold_file": "rag-limitations.md",
+      "intent": "conceptual",
+      "ranks": {
+        "vector": 1,
+        "bm25": 1,
+        "hybrid": 1,
+        "rerank": 1
+      },
+      "tops": {
+        "vector": {
+          "file": "rag-limitations.md",
+          "page": 1,
+          "chunk_id": "rag-limitations-p1-c0000",
+          "score": 0.3529478907585144,
+          "snippet": "# Limitations of a vector-only pipeline  A basic retrieval pipeline embeds a question, fetches the nearest chunks, and asks a language model to answer from that shortlist. The base"
+        },
+        "bm25": {
+          "file": "rag-limitations.md",
+          "page": 1,
+          "chunk_id": "rag-limitations-p1-c0000",
+          "score": 12.18597304862636,
+          "snippet": "# Limitations of a vector-only pipeline  A basic retrieval pipeline embeds a question, fetches the nearest chunks, and asks a language model to answer from that shortlist. The base"
+        },
+        "hybrid": {
+          "file": "rag-limitations.md",
+          "page": 1,
+          "chunk_id": "rag-limitations-p1-c0000",
+          "score": 0.03278688524590164,
+          "snippet": "# Limitations of a vector-only pipeline  A basic retrieval pipeline embeds a question, fetches the nearest chunks, and asks a language model to answer from that shortlist. The base"
+        },
+        "rerank": {
+          "file": "rag-limitations.md",
+          "page": 1,
+          "chunk_id": "rag-limitations-p1-c0000",
+          "score": 2.3037335872650146,
+          "snippet": "# Limitations of a vector-only pipeline  A basic retrieval pipeline embeds a question, fetches the nearest chunks, and asks a language model to answer from that shortlist. The base"
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "question": "How does hybrid search improve retrieval?",
+      "gold_substring": "keeping a chunk that is strong in either the dense list or the sparse list",
+      "gold_file": "hybrid-search.md",
+      "intent": "conceptual",
+      "ranks": {
+        "vector": 1,
+        "bm25": 1,
+        "hybrid": 1,
+        "rerank": 1
+      },
+      "tops": {
+        "vector": {
+          "file": "hybrid-search.md",
+          "page": 1,
+          "chunk_id": "hybrid-search-p1-c0000",
+          "score": 0.6046234965324402,
+          "snippet": "# How combining the two lists helps  Running a vector search and a keyword search side by side is not yet a hybrid system. Hybrid search is what you do with the two lists.  Hybrid "
+        },
+        "bm25": {
+          "file": "hybrid-search.md",
+          "page": 1,
+          "chunk_id": "hybrid-search-p1-c0000",
+          "score": 9.298715754096985,
+          "snippet": "# How combining the two lists helps  Running a vector search and a keyword search side by side is not yet a hybrid system. Hybrid search is what you do with the two lists.  Hybrid "
+        },
+        "hybrid": {
+          "file": "hybrid-search.md",
+          "page": 1,
+          "chunk_id": "hybrid-search-p1-c0000",
+          "score": 0.03278688524590164,
+          "snippet": "# How combining the two lists helps  Running a vector search and a keyword search side by side is not yet a hybrid system. Hybrid search is what you do with the two lists.  Hybrid "
+        },
+        "rerank": {
+          "file": "hybrid-search.md",
+          "page": 1,
+          "chunk_id": "hybrid-search-p1-c0000",
+          "score": 9.404422760009766,
+          "snippet": "# How combining the two lists helps  Running a vector search and a keyword search side by side is not yet a hybrid system. Hybrid search is what you do with the two lists.  Hybrid "
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "question": "What is the difference between dense and sparse retrieval?",
+      "gold_substring": "Dense retrieval compares embeddings, while sparse retrieval compares term weights.",
+      "gold_file": "dense-vs-sparse.md",
+      "intent": "conceptual",
+      "ranks": {
+        "vector": 1,
+        "bm25": 1,
+        "hybrid": 1,
+        "rerank": 1
+      },
+      "tops": {
+        "vector": {
+          "file": "dense-vs-sparse.md",
+          "page": 1,
+          "chunk_id": "dense-vs-sparse-p1-c0000",
+          "score": 0.6760414242744446,
+          "snippet": "# Dense and sparse retrieval  Search can score a chunk in two different ways, and the scores do not mean the same thing.  Dense retrieval compares embeddings, while sparse retrieva"
+        },
+        "bm25": {
+          "file": "dense-vs-sparse.md",
+          "page": 1,
+          "chunk_id": "dense-vs-sparse-p1-c0000",
+          "score": 10.305018885577427,
+          "snippet": "# Dense and sparse retrieval  Search can score a chunk in two different ways, and the scores do not mean the same thing.  Dense retrieval compares embeddings, while sparse retrieva"
+        },
+        "hybrid": {
+          "file": "dense-vs-sparse.md",
+          "page": 1,
+          "chunk_id": "dense-vs-sparse-p1-c0000",
+          "score": 0.03278688524590164,
+          "snippet": "# Dense and sparse retrieval  Search can score a chunk in two different ways, and the scores do not mean the same thing.  Dense retrieval compares embeddings, while sparse retrieva"
+        },
+        "rerank": {
+          "file": "dense-vs-sparse.md",
+          "page": 1,
+          "chunk_id": "dense-vs-sparse-p1-c0000",
+          "score": 8.175107955932617,
+          "snippet": "# Dense and sparse retrieval  Search can score a chunk in two different ways, and the scores do not mean the same thing.  Dense retrieval compares embeddings, while sparse retrieva"
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "question": "What does error code ERR-VEC-404 mean?",
+      "gold_substring": "ERR-VEC-404",
+      "gold_file": "aurora-search-manual.txt",
+      "intent": "sparse",
+      "ranks": {
+        "vector": 1,
+        "bm25": 1,
+        "hybrid": 1,
+        "rerank": 1
+      },
+      "tops": {
+        "vector": {
+          "file": "aurora-search-manual.txt",
+          "page": 1,
+          "chunk_id": "aurora-search-manual-p1-c0004",
+          "score": 0.4241828918457031,
+          "snippet": "Collection missing  ERR-VEC-404 means the vector collection named in the request does not exist on the Aurora Search Appliance. Rebuild it with the command aurora index build and c"
+        },
+        "bm25": {
+          "file": "aurora-search-manual.txt",
+          "page": 1,
+          "chunk_id": "aurora-search-manual-p1-c0004",
+          "score": 6.146371564733948,
+          "snippet": "Collection missing  ERR-VEC-404 means the vector collection named in the request does not exist on the Aurora Search Appliance. Rebuild it with the command aurora index build and c"
+        },
+        "hybrid": {
+          "file": "aurora-search-manual.txt",
+          "page": 1,
+          "chunk_id": "aurora-search-manual-p1-c0004",
+          "score": 0.03278688524590164,
+          "snippet": "Collection missing  ERR-VEC-404 means the vector collection named in the request does not exist on the Aurora Search Appliance. Rebuild it with the command aurora index build and c"
+        },
+        "rerank": {
+          "file": "aurora-search-manual.txt",
+          "page": 1,
+          "chunk_id": "aurora-search-manual-p1-c0004",
+          "score": 7.593597412109375,
+          "snippet": "Collection missing  ERR-VEC-404 means the vector collection named in the request does not exist on the Aurora Search Appliance. Rebuild it with the command aurora index build and c"
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "question": "What retention period does policy POL-RET-90 require?",
+      "gold_substring": "POL-RET-90",
+      "gold_file": "northwind-retrieval-policy.md",
+      "intent": "sparse",
+      "ranks": {
+        "vector": 1,
+        "bm25": 1,
+        "hybrid": 1,
+        "rerank": 1
+      },
+      "tops": {
+        "vector": {
+          "file": "northwind-retrieval-policy.md",
+          "page": 1,
+          "chunk_id": "northwind-retrieval-policy-p1-c0003",
+          "score": 0.6272908449172974,
+          "snippet": "## Binding retention rule  POL-RET-90 requires customer answers written to the audit log to be retained for 90 days.  The clock starts when the answer is shown to the customer, not"
+        },
+        "bm25": {
+          "file": "northwind-retrieval-policy.md",
+          "page": 1,
+          "chunk_id": "northwind-retrieval-policy-p1-c0002",
+          "score": 6.73701586642219,
+          "snippet": "Customer answers are the rows that contain the generated text and the cited file names. They are the rows a later audit will read when someone asks why a customer was told a partic"
+        },
+        "hybrid": {
+          "file": "northwind-retrieval-policy.md",
+          "page": 1,
+          "chunk_id": "northwind-retrieval-policy-p1-c0003",
+          "score": 0.03252247488101534,
+          "snippet": "## Binding retention rule  POL-RET-90 requires customer answers written to the audit log to be retained for 90 days.  The clock starts when the answer is shown to the customer, not"
+        },
+        "rerank": {
+          "file": "northwind-retrieval-policy.md",
+          "page": 1,
+          "chunk_id": "northwind-retrieval-policy-p1-c0003",
+          "score": 7.937069416046143,
+          "snippet": "## Binding retention rule  POL-RET-90 requires customer answers written to the audit log to be retained for 90 days.  The clock starts when the answer is shown to the customer, not"
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "question": "Which reciprocal rank fusion constant does the Northwind retrieval standard recommend?",
+      "gold_substring": "RRF-K60",
+      "gold_file": "reciprocal-rank-fusion.md",
+      "intent": "sparse",
+      "ranks": {
+        "vector": 1,
+        "bm25": 1,
+        "hybrid": 1,
+        "rerank": 1
+      },
+      "tops": {
+        "vector": {
+          "file": "reciprocal-rank-fusion.md",
+          "page": 1,
+          "chunk_id": "reciprocal-rank-fusion-p1-c0000",
+          "score": 0.6949606537818909,
+          "snippet": "# Rank-based fusion  The Northwind retrieval standard recommends reciprocal rank fusion as the way to combine the two ranked lists. It does not add their raw scores.  The contribut"
+        },
+        "bm25": {
+          "file": "reciprocal-rank-fusion.md",
+          "page": 1,
+          "chunk_id": "reciprocal-rank-fusion-p1-c0000",
+          "score": 20.206477194997937,
+          "snippet": "# Rank-based fusion  The Northwind retrieval standard recommends reciprocal rank fusion as the way to combine the two ranked lists. It does not add their raw scores.  The contribut"
+        },
+        "hybrid": {
+          "file": "reciprocal-rank-fusion.md",
+          "page": 1,
+          "chunk_id": "reciprocal-rank-fusion-p1-c0000",
+          "score": 0.03278688524590164,
+          "snippet": "# Rank-based fusion  The Northwind retrieval standard recommends reciprocal rank fusion as the way to combine the two ranked lists. It does not add their raw scores.  The contribut"
+        },
+        "rerank": {
+          "file": "reciprocal-rank-fusion.md",
+          "page": 1,
+          "chunk_id": "reciprocal-rank-fusion-p1-c0000",
+          "score": 9.34930419921875,
+          "snippet": "# Rank-based fusion  The Northwind retrieval standard recommends reciprocal rank fusion as the way to combine the two ranked lists. It does not add their raw scores.  The contribut"
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "question": "Which embedding model does the Aurora Search Appliance model ASA-210 ship with?",
+      "gold_substring": "ASA-210 ships with sentence-transformers/all-MiniLM-L6-v2",
+      "gold_file": "aurora-search-manual.txt",
+      "intent": "sparse",
+      "ranks": {
+        "vector": 3,
+        "bm25": 2,
+        "hybrid": 2,
+        "rerank": 1
+      },
+      "tops": {
+        "vector": {
+          "file": "aurora-search-manual.txt",
+          "page": 1,
+          "chunk_id": "aurora-search-manual-p1-c0000",
+          "score": 0.5337396860122681,
+          "snippet": "Aurora Search Appliance Field manual  This manual describes day-to-day operation of the search appliance. It covers the bezel, the ticket fields, and the error identifiers an opera"
+        },
+        "bm25": {
+          "file": "aurora-search-manual.txt",
+          "page": 1,
+          "chunk_id": "aurora-search-manual-p1-c0000",
+          "score": 10.438949831496696,
+          "snippet": "Aurora Search Appliance Field manual  This manual describes day-to-day operation of the search appliance. It covers the bezel, the ticket fields, and the error identifiers an opera"
+        },
+        "hybrid": {
+          "file": "aurora-search-manual.txt",
+          "page": 1,
+          "chunk_id": "aurora-search-manual-p1-c0000",
+          "score": 0.03278688524590164,
+          "snippet": "Aurora Search Appliance Field manual  This manual describes day-to-day operation of the search appliance. It covers the bezel, the ticket fields, and the error identifiers an opera"
+        },
+        "rerank": {
+          "file": "aurora-search-manual.txt",
+          "page": 1,
+          "chunk_id": "aurora-search-manual-p1-c0002",
+          "score": 4.262481689453125,
+          "snippet": "Shipped embedding checkpoint  ASA-210 ships with sentence-transformers/all-MiniLM-L6-v2. Rebuild the collection if that checkpoint is replaced. Do not copy a checkpoint name from a"
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "question": "How can a searcher that understands synonyms still fail to surface a product code?",
+      "gold_substring": "Synonym-aware embedding search still fails when the needed evidence is a product code",
+      "gold_file": "dense-vs-sparse.md",
+      "intent": "dense",
+      "ranks": {
+        "vector": 1,
+        "bm25": 5,
+        "hybrid": 2,
+        "rerank": 1
+      },
+      "tops": {
+        "vector": {
+          "file": "dense-vs-sparse.md",
+          "page": 1,
+          "chunk_id": "dense-vs-sparse-p1-c0003",
+          "score": 0.623595118522644,
+          "snippet": "## Choosing by question shape  Use the dense index when the wording of the question is not the wording of the source. Use the sparse index when the wording must match, especially f"
+        },
+        "bm25": {
+          "file": "aurora-search-manual.txt",
+          "page": 1,
+          "chunk_id": "aurora-search-manual-p1-c0001",
+          "score": 11.685440604697142,
+          "snippet": "How to file a ticket  Read the bezel before you open a hardware ticket. Record the product code from the bezel before you open a ticket. The product code is not a description of th"
+        },
+        "hybrid": {
+          "file": "bm25-guide.md",
+          "page": 1,
+          "chunk_id": "bm25-guide-p1-c0003",
+          "score": 0.03200204813108039,
+          "snippet": "## What keyword search misses  A question written in fresh words can share almost no terms with the passage that answers it. BM25 then ranks a chunk that repeats the few overlappin"
+        },
+        "rerank": {
+          "file": "dense-vs-sparse.md",
+          "page": 1,
+          "chunk_id": "dense-vs-sparse-p1-c0003",
+          "score": 4.178517818450928,
+          "snippet": "## Choosing by question shape  Use the dense index when the wording of the question is not the wording of the source. Use the sparse index when the wording must match, especially f"
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "question": "Which cross-encoder does the lab standard use to rerank fused chunks?",
+      "gold_substring": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "gold_file": "cross-encoder-reranking.md",
+      "intent": "sparse",
+      "ranks": {
+        "vector": 2,
+        "bm25": 1,
+        "hybrid": 2,
+        "rerank": 1
+      },
+      "tops": {
+        "vector": {
+          "file": "cross-encoder-reranking.md",
+          "page": 1,
+          "chunk_id": "cross-encoder-reranking-p1-c0002",
+          "score": 0.6287884712219238,
+          "snippet": "## What the lab keeps  Fusion produces ten chunks. The cross-encoder scores all ten and the pipeline keeps five. Those five are the only context passed to the answer step. A gold c"
+        },
+        "bm25": {
+          "file": "cross-encoder-reranking.md",
+          "page": 1,
+          "chunk_id": "cross-encoder-reranking-p1-c0000",
+          "score": 19.182120702711416,
+          "snippet": "# Joint scoring after fusion  The lab standard reorders the fused shortlist with a cross-encoder before any answer is generated. The model reads the question and one chunk as a pai"
+        },
+        "hybrid": {
+          "file": "cross-encoder-reranking.md",
+          "page": 1,
+          "chunk_id": "cross-encoder-reranking-p1-c0002",
+          "score": 0.03252247488101534,
+          "snippet": "## What the lab keeps  Fusion produces ten chunks. The cross-encoder scores all ten and the pipeline keeps five. Those five are the only context passed to the answer step. A gold c"
+        },
+        "rerank": {
+          "file": "cross-encoder-reranking.md",
+          "page": 1,
+          "chunk_id": "cross-encoder-reranking-p1-c0000",
+          "score": 8.77511978149414,
+          "snippet": "# Joint scoring after fusion  The lab standard reorders the fused shortlist with a cross-encoder before any answer is generated. The model reads the question and one chunk as a pai"
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "question": "What collection rebuild service target is named by code SLA-15M?",
+      "gold_substring": "SLA-15M",
+      "gold_file": "vector-error-codes.pdf",
+      "intent": "sparse",
+      "ranks": {
+        "vector": 1,
+        "bm25": 1,
+        "hybrid": 1,
+        "rerank": 1
+      },
+      "tops": {
+        "vector": {
+          "file": "vector-error-codes.pdf",
+          "page": 2,
+          "chunk_id": "vector-error-codes-p2-c0001",
+          "score": 0.7263172268867493,
+          "snippet": "Small-collection rebuild target Code SLA-15M names a 15 minute collection rebuild service target for corpora under 50000 chunks. If a rebuild exceeds that target, capture the appli"
+        },
+        "bm25": {
+          "file": "vector-error-codes.pdf",
+          "page": 2,
+          "chunk_id": "vector-error-codes-p2-c0001",
+          "score": 20.431563855902063,
+          "snippet": "Small-collection rebuild target Code SLA-15M names a 15 minute collection rebuild service target for corpora under 50000 chunks. If a rebuild exceeds that target, capture the appli"
+        },
+        "hybrid": {
+          "file": "vector-error-codes.pdf",
+          "page": 2,
+          "chunk_id": "vector-error-codes-p2-c0001",
+          "score": 0.03278688524590164,
+          "snippet": "Small-collection rebuild target Code SLA-15M names a 15 minute collection rebuild service target for corpora under 50000 chunks. If a rebuild exceeds that target, capture the appli"
+        },
+        "rerank": {
+          "file": "vector-error-codes.pdf",
+          "page": 2,
+          "chunk_id": "vector-error-codes-p2-c0001",
+          "score": 9.059685707092285,
+          "snippet": "Small-collection rebuild target Code SLA-15M names a 15 minute collection rebuild service target for corpora under 50000 chunks. If a rebuild exceeds that target, capture the appli"
+        }
+      }
+    }
+  ]
+}

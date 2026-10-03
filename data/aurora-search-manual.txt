@@ -1,0 +1,35 @@
+Aurora Search Appliance
+Field manual
+
+This manual describes day-to-day operation of the search appliance. It covers the bezel, the ticket fields, and the error identifiers an operator is allowed to quote. It is not the ranking standard and it is not the records policy.
+
+Installation notes
+
+Seat the appliance on a ventilated shelf. Connect the management port before the data port. Confirm that the clock is set, because build logs are useless when the clock is wrong. The narrative in this opening does not name a model number and does not name an embedding checkpoint. Those facts are printed once, in the sections that own them, so a keyword lookup cannot confuse this introduction with the specification.
+
+How to file a ticket
+
+Read the bezel before you open a hardware ticket. Record the product code from the bezel before you open a ticket. The product code is not a description of the fault. Repeat the product code in the subject line so support can route the product code to the right queue. If the product code is unreadable, say that the product code is unreadable. Do not invent a product code from memory, and do not describe this step as a theory of search. It is only a ticket-routing instruction. Mention the product code again in the first sentence of the ticket body so the product code is visible in the queue preview.
+
+Shipped embedding checkpoint
+
+ASA-210 ships with sentence-transformers/all-MiniLM-L6-v2.
+Rebuild the collection if that checkpoint is replaced. Do not copy a checkpoint name from a chunking note or from a general discussion of encoders. The sentence above is the specification for this appliance.
+
+Logs and ports
+
+The management log records process starts, failed binds, and disk watermarks. It does not explain ranking. The data port serves queries. The management port serves builds and log collection. Operators who paste a query into the management port will see a refusal, and that refusal is not one of the collection errors below. Rotate the management log when it passes the local disk watermark. A watermark refusal is a capacity event. It is not evidence that a collection is missing, and it is not a service target for how long a rebuild may take.
+
+Collection missing
+
+ERR-VEC-404 means the vector collection named in the request does not exist on the Aurora Search Appliance.
+Rebuild it with the command aurora index build and confirm the persist directory. Quote the identifier exactly when you write the incident. A topical paragraph about a missing collection, stored in another note, is not this error and does not carry this identifier.
+
+Empty keyword index
+
+ERR-BM25-017 means the sparse index was built from an empty token list.
+Check that the corpus loader read the files before you build the keyword index. An empty token list is a build failure. It is not a low BM25 score, and it is not the collection-missing identifier above.
+
+Rebuild timing, without the operations code
+
+Collection rebuild service targets depend on corpus size. A small collection finishes faster than a large one. The operations sheet, not this manual, names the code for the small-collection target. This manual will not repeat that code. If you need the named target, open the operations sheet and read the page that states it. Guessing a duration from this paragraph will produce a number this manual never gave you.

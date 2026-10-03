@@ -1,0 +1,83 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 5 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+5 0 obj
+<< /Length 618 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+54 740 Td
+(Vector Error Codes) Tj
+T* () Tj
+T* (Operations sheet for the Aurora Search Appliance.) Tj
+T* () Tj
+T* (This sheet lists terse operational codes that the narrative manual does not) Tj
+T* (spell out.) Tj
+T* () Tj
+T* (Collection rebuild service targets depend on corpus size.) Tj
+T* () Tj
+T* (Large collections take longer than small ones.) Tj
+T* () Tj
+T* (The small-collection target is named on the next page of this sheet.) Tj
+T* () Tj
+T* (Do not guess the code from the narrative manual.) Tj
+T* () Tj
+T* (Use this sheet when an operator asks for the named service target.) Tj
+T* () Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 7 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+7 0 obj
+<< /Length 579 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+54 740 Td
+(Small-collection rebuild target) Tj
+T* () Tj
+T* (Code SLA-15M names a 15 minute collection rebuild service target for corpora) Tj
+T* (under 50000 chunks.) Tj
+T* () Tj
+T* (If a rebuild exceeds that target, capture the appliance log and open a ticket) Tj
+T* (with the collection name.) Tj
+T* () Tj
+T* (SLA-15M applies only under the stated corpus size.) Tj
+T* () Tj
+T* (Above that size, schedule the rebuild overnight instead of using this target.) Tj
+T* () Tj
+T* (Quote SLA-15M in the ticket so the queue can match the service target.) Tj
+T* () Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000000992 00000 n 
+0000001118 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1748
+%%EOF

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "q1",
+    "question": "What are the main limitations of traditional RAG?",
+    "gold_substring": "five structural limitations of a vector-only RAG pipeline",
+    "gold_file": "rag-limitations.md",
+    "intent": "conceptual"
+  },
+  {
+    "id": "q2",
+    "question": "How does hybrid search improve retrieval?",
+    "gold_substring": "keeping a chunk that is strong in either the dense list or the sparse list",
+    "gold_file": "hybrid-search.md",
+    "intent": "conceptual"
+  },
+  {
+    "id": "q3",
+    "question": "What is the difference between dense and sparse retrieval?",
+    "gold_substring": "Dense retrieval compares embeddings, while sparse retrieval compares term weights.",
+    "gold_file": "dense-vs-sparse.md",
+    "intent": "conceptual"
+  },
+  {
+    "id": "q4",
+    "question": "What does error code ERR-VEC-404 mean?",
+    "gold_substring": "ERR-VEC-404",
+    "gold_file": "aurora-search-manual.txt",
+    "intent": "sparse"
+  },
+  {
+    "id": "q5",
+    "question": "What retention period does policy POL-RET-90 require?",
+    "gold_substring": "POL-RET-90",
+    "gold_file": "northwind-retrieval-policy.md",
+    "intent": "sparse"
+  },
+  {
+    "id": "q6",
+    "question": "Which reciprocal rank fusion constant does the Northwind retrieval standard recommend?",
+    "gold_substring": "RRF-K60",
+    "gold_file": "reciprocal-rank-fusion.md",
+    "intent": "sparse"
+  },
+  {
+    "id": "q7",
+    "question": "Which embedding model does the Aurora Search Appliance model ASA-210 ship with?",
+    "gold_substring": "ASA-210 ships with sentence-transformers/all-MiniLM-L6-v2",
+    "gold_file": "aurora-search-manual.txt",
+    "intent": "sparse"
+  },
+  {
+    "id": "q8",
+    "question": "How can a searcher that understands synonyms still fail to surface a product code?",
+    "gold_substring": "Synonym-aware embedding search still fails when the needed evidence is a product code",
+    "gold_file": "dense-vs-sparse.md",
+    "intent": "dense"
+  },
+  {
+    "id": "q9",
+    "question": "Which cross-encoder does the lab standard use to rerank fused chunks?",
+    "gold_substring": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "gold_file": "cross-encoder-reranking.md",
+    "intent": "sparse"
+  },
+  {
+    "id": "q10",
+    "question": "What collection rebuild service target is named by code SLA-15M?",
+    "gold_substring": "SLA-15M",
+    "gold_file": "vector-error-codes.pdf",
+    "intent": "sparse"
+  }
+]
